@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Hello, world!</title>
+    <!-- css -->
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!-- <link rel="stylesheet" href="bootstrap/style.min.css"> -->
+
+    <style>
+      .dark {
+        background: #181818;
+        color: #fff;
+      }
+      input[type="checkbox"].toggle-switch {
+        transform: rotate(90deg);
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        outline: 0;
+        cursor: pointer;
+        /* width of the track */
+        width: 4em;
+        /* height of the track */
+        height: 1.5em;
+        border-radius: 3em;
+        background-color: #ebebeb;
+        transition: background-color0.09s ease-in-out;
+        position: relative;
+      }
+      input[type="checkbox"].toggle-switch:active::after {
+        background-color: #f2f2f2;
+        padding-right: 0.8em;
+      }
+
+      input[type="checkbox"].toggle-switch::after {
+        content: "";
+        width: 2em;
+        height: 2em;
+        background-color: white;
+        border-radius: 3em;
+        position: absolute;
+        left: -5px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+          padding0.3s ease, margin0.3s ease;
+        box-shadow: 2px 0px 5px 0 rgba(0, 0, 0, 0.15);
+      }
+      input[type="checkbox"].toggle-switch:checked {
+        background-color: #333;
+      }
+      input[type="checkbox"].toggle-switch:checked:active::after {
+        margin-left: -0.8em;
+      }
+
+      input[type="checkbox"].toggle-switch:checked::after {
+        left: 2em;
+        background-color: #242424;
+      }
+    </style>
+  </head>
+  <body class="dark">
+    <input type="checkbox" class="toggle-switch" />
+
+    <form>
+      <!-- <div class="popup_form_left">
+        <img src="images/svg.png" alt="" />
+      </div> -->
+
+      <div class="popup_form">
+        <div class="popup_form_handler">
+          <img src="images/svg.png" alt="" align="center" />
+          <h1>How Did it Got!</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur <br />
+            adipisicing elit. Incidunt, tempore.
+          </p>
+          <input
+            type="text"
+            class="popup_form_input input"
+            placeholder="First Name"
+          /><br /><br />
+
+          <input
+            type="text"
+            class="popup_form_input input"
+            placeholder="Last Name"
+          /><br /><br />
+
+          <input
+            type="text"
+            class="popup_form_input input"
+            placeholder="Your Email"
+          /><br /><br />
+          <input
+            type="password"
+            class="popup_form_input input"
+            placeholder="Your Password"
+          /><br /><br />
+
+          <input
+            type="text"
+            class="popup_form_input input"
+            placeholder="Comfirm Password"
+          /><br /><br />
+
+          <input type="button" value="Create" class="popup_form_btn input" />
+          <div class="popup_form_footer">
+            <a href="#" class="popup_form_signup">Sign up</a>
+            <a href="#" class="popup_form_forget">Forgot Password</a>
+          </div>
+        </div>
+
+        <!-- sign up -->
+      </div>
+    </form>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+
+    <script>
+      $(".toggle-switch").on("click", function (event) {
+        $("body").toggleClass("dark");
+        3;
+      });
+    </script>
+  </body>
+</html>
